@@ -1,0 +1,163 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+}   
+
+.nft-card{
+    max-width: 320px;
+    background-color: hsl(216, 50%, 16%);
+    height: 550px;
+    padding:20px;
+    border-radius: 10px;;
+} 
+
+.nft-img img{
+    max-width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    position: relative;
+    object-fit: cover;
+}
+
+.nft-img .overlay{
+    position: relative;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: hsl(178, 100%, 50%);
+    background-color: rgba(0,255,255,.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+}
+
+.nft-img:hover .overlay{
+    display:flex;
+    width: 280px;
+    height: 280px;
+    transition: width 0.5s ease;
+    margin-top: -285px;
+    border-radius: 10px;
+    
+}
+
+.nft-img .icon {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+
+.nft-title h1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.nft-title h1 a{
+    font-weight:600;
+    font-size: 20px;
+    color: white;
+    font-family: 'Outfit';
+    text-decoration: none;
+}
+
+.nft-title h1 a:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+.nft-desc p{
+    color:hsl(215, 51%, 70%);
+    font-size:15px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.nft-prices-info{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.nft-prices-info p{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.nft-prices-info p.price{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    width: 50%;
+    
+}
+
+.nft-prices-info p.price img{
+    padding-right: 5px;
+}
+
+
+.nft-prices-info p.left{
+    color:hsl(215, 51%, 70%);
+    font-weight: 400;
+    float: right;
+    width: 50%;
+    text-align: right;
+    display:flex;
+    align-items: right;
+    justify-content: end;
+}
+
+.nft-prices-info p.left img{
+    padding-right: 5px;
+}
+
+hr.line{
+    background: hsl(215, 32%, 27%) ! important;
+    background-color: hsl(215, 32%, 27%);
+    color: hsl(215, 32%, 27%);;
+}
+
+.owner{
+    display: flex;
+    align-items: left;
+    justify-content: start; 
+    margin-top: 20px;
+}
+
+.owner .profile img{
+    width: 30px;
+    height 30px;
+    border:1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.owner-name p{
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.owner-name p a{
+    text-decoration: none;
+    color:white;
+    font-weight: 400;
+}
+
+.owner-name p a:hover{
+    color:hsl(178, 100%, 50%);
+}
