@@ -126,9 +126,7 @@
 }
 
 hr.line{
-    background: hsl(215, 32%, 27%) ! important;
-    background-color: hsl(215, 32%, 27%);
-    color: hsl(215, 32%, 27%);;
+    border:1px solid hsl(215, 32%, 27%);
 }
 
 .owner{
